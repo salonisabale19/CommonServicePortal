@@ -1,0 +1,160 @@
+
+.body{
+    background-color:antiquewhite;
+    width: fit-content;
+}
+
+.title{
+    background-color: burlywood;
+    padding: 20px;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.title-1{
+    background-color:cadetblue;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    margin: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+label{
+    margin: 10px;
+}
+
+input{
+    padding: 5px;
+    margin: 10px;
+    width: 300px;
+    text-align: left;
+}
+
+.container{
+    display: inline-flex;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: fit-content;
+}
+
+.personal{
+    background-color:blanchedalmond;
+    margin: 5px;
+    width: fit-content;
+}
+
+.family{
+    background-color:blanchedalmond;
+    margin: 5px;
+    width: fit-content;
+}
+
+.personal-section{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 20px;
+    font-size: 15px;
+    width: 680px;
+}
+
+.family-section{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 20px;
+    width: 680px;
+}
+
+.Education{
+    background-color:blanchedalmond;
+    margin: 5px;
+    width: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom:10px;
+}
+
+.secondary-section{
+    padding: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.Higher-Secondary-section{
+    padding: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.Graduation-section{
+    padding-top: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.Post-Graduation-section{
+    padding-top: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.Identity{
+    background-color:blanchedalmond;
+    margin: 5px;
+    width: 745px;
+}
+
+.Documents{
+    background-color:blanchedalmond;
+    margin: 5px;
+    width: 745px;
+}
+
+.Id-section{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.Document-section{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    background-color:burlywood ;
+    border: 2px solid black;
+    color: black;
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 2px beige;
+}
+
+button:hover{
+    cursor: pointer;
+    transform:scale(0.5)
+}

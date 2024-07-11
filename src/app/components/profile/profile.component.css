@@ -1,0 +1,27 @@
+.body{
+    background-color: aliceblue;
+}
+
+.title{
+    background-color: burlywood;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 5px;
+}
+
+.section{
+    background-color:bisque;
+    padding: 10px;
+}
+
+.option{
+    background-color: cornsilk;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+

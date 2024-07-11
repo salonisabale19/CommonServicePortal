@@ -1,0 +1,35 @@
+
+.col-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200vh; /* Adjust height as needed */
+  color: aquamarine;
+}
+label{
+  width: 100px;
+  display: inline-block;
+  margin: 5px;
+}
+
+button{
+  margin-top: 10px;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.text-success {
+  color: green;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: blue;
+}

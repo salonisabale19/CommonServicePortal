@@ -1,0 +1,35 @@
+<hr>
+<h2 style="text-align: center;margin-top: 5px;">Admin Dashboard</h2>
+<a style="color: rgba(86, 86, 86);font-size: medium;"><marquee behavior="scroll" direction="left">
+    Welcome to Admin Dashborad. please Find the patient list below! 
+</marquee></a>
+<table class="table table-stripped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>MobileNo</th>
+            <th>Income</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let a of applications">
+            <td>{{a.id}}</td>            
+            <td>{{a.applicantName}}</td>
+            <td>{{a.email}}</td>
+            <td>{{a.age}}</td>
+            <td>{{a.mobileNo}}</td>
+            <td>{{a.income}}</td>
+            <td>{{a.address}}</td>
+            <td>
+                <button (click)="delete(a.id)" class="btn btn-danger">REJECT</button>
+            </td>
+            <td>
+                <button (click)="update(a.id)" class="btn btn-primary" >Comment</button>
+            </td>
+         </tr>
+    </tbody>
+</table>

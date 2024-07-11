@@ -1,0 +1,197 @@
+<!-- application-form.component.html -->
+<div class="title"><b>Application form</b></div>
+
+<div class="title"><b>Details</b></div>
+<form (ngSubmit)="onSubmit()">
+  <div class="container">
+  <div class="personal">
+    <div class="title-1">personal details</div>
+    <div class="personal-section">
+      <label for="first-name">Name</label>
+      <input type="text" id="first-name" name="firstname" placeholder="Enter name" [(ngModel)]="application.applicantName">
+      <br>
+      <label for="Email">Email Id</label>
+      <input type="email" id="Email" name="Email" placeholder="Enter Email"[(ngModel)]="application.email">
+      <br>
+      <label for="Age">Age</label>
+      <input type="text" id="Age" name="Age" placeholder="Enter Age"[(ngModel)]="application.age">
+      <br>
+      <label for="DOB">DOB</label>
+      <input type="date" id="DOB" name="DOB" placeholder="Enter DOB">
+      <br>
+      <label for="Religion">Religion</label>
+      <input type="text" id="Religion" name="Religion" placeholder="Enter Religion"[(ngModel)]="application.religion">
+      <br>
+      <label for="Gender">Gender</label>
+      <select name="Gender" id="Gender"> 
+        <option value=""></option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+      <br>
+      <label for="Mobile-number">Mobile number</label>
+      <input type="tel" id="Mobile-number" name="Mobile number" placeholder="Enter Mobile number"[(ngModel)]="application.mobileNo">
+      <br>
+      <label for="Address">Address</label>
+      <input type="text" id="Address" name="Address" placeholder="Enter Address"[(ngModel)]="application.address">
+      <br>
+      <label for="Pincode">Pin code</label>
+      <input type="text" id="Pincode" name="Pincode" placeholder="Enter Pin code">
+    </div>
+  </div>
+  <div class="family">
+    <div class="title-1">family details</div>
+    <div class="family-section">
+      <label for="Family-income">Family Income</label>
+      <input type="text" id="Family-income" name="Family-income" placeholder="Enter Yearly Income"[(ngModel)]="application.income">
+      <br>
+      <label for="Family-memebers">Family members</label>
+      <input type="number" id="Family-members" name="Family-members" placeholder="Enter Family members">
+    </div>
+  </div>
+</div>
+
+<div class="title"><b>Education Details</b></div>
+
+<div class="container">
+  <div class="Education">
+    <div class="title-1">Secondary details</div>
+    <div class="secondary-section">
+      <label for="College-name">College Name</label>
+      <input type="text" id="College-name" name="College-name" placeholder="Enter College Name">
+      <br>
+      <label for="Passing-year">Passing year</label>
+      <input type="month" id="Passing-year" name="Passing-year" placeholder="Enter Passing year">
+      <br>
+      <label for="Board">Board</label>
+      <input type="text" id="Board" name="Board" placeholder="Enter Board">
+      <br>
+      <label for="Percentage">Percentage</label>
+      <input type="text" id="Percentage" name="Percentage" placeholder="Enter Percentage">
+    </div>
+  </div>
+
+  <div class="Education">
+    <div class="title-1">Higher-Secondary details</div>
+    <div class="Higher-Secondary-section">
+      <label for="College-name">College Name</label>
+      <input type="text" id="College-name" name="College-name" placeholder="Enter College Name">
+      <br>
+      <label for="Passing-year">Passing year</label>
+      <input type="month" id="Passing-year" name="Passing-year" placeholder="Enter Passing year">
+      <br>
+      <label for="Board">Board</label>
+      <input type="text" id="Board" name="Board" placeholder="Enter Board">
+      <br>
+      <label for="Percentage">Percentage</label>
+      <input type="text" id="Percentage" name="Percentage" placeholder="Enter Percentage">
+    </div>
+  </div>
+
+  <div class="Education">
+    <div class="title-1">Graduation details</div>
+    <div class="Graduation-section">
+      <label for="College-name">College Name</label>
+      <input type="text" id="College-name" name="College-name" placeholder="Enter College Name">
+      <br>
+      <label for="Passing-year">Passing year</label>
+      <input type="month" id="Passing-year" name="Passing-year" placeholder="Enter Passing year">
+      <br>
+      <label for="Board">Board</label>
+      <input type="text" id="Board" name="Board" placeholder="Enter Board">
+      <br>
+      <label for="Percentage">Percentage</label>
+      <input type="text" id="Percentage" name="Percentage" placeholder="Enter Percentage">
+    </div>
+  </div>
+
+  <div class="Education">
+    <div class="title-1">Post Graduation details</div>
+    <div class="Post-Graduation-section">
+      <label for="College-name">College Name</label>
+      <input type="text" id="College-name" name="College-name" placeholder="Enter College Name">
+      <br>
+      <label for="Passing-year">Passing year</label>
+      <input type="month" id="Passing-year" name="Passing-year" placeholder="Enter Passing year">
+      <br>
+      <label for="Board">Board</label>
+      <input type="text" id="Board" name="Board" placeholder="Enter Board">
+      <br>
+      <label for="Percentage">Percentage</label>
+      <input type="text" id="Percentage" name="Percentage" placeholder="Enter Percentage">
+    </div>
+  </div>
+</div>
+
+<div class="title"><b>Identity Details and documents</b></div>
+
+<div class="container">
+  <div class="Identity">
+    <div class="title-1">GovernmentId-details</div>
+    <div class="Id-section">
+      <label for="Aadhar-number">Aadhar number</label>
+      <input type="text" id="Aadhar-number" name="Aadhar-number" placeholder="Enter Aadhar number">
+      <br>
+      <label for="Pan-card">Pan card number</label>
+      <input type="text" id="Pan-card" name="Pan-card" placeholder="Enter Pan card number">
+    </div>
+  </div>
+
+  <div class="Documents">
+    <div class="title-1">Documents</div>
+    <div class="Document-section">
+      <label for="Income-certificate">Upload Income Certificate</label>
+      <input type="file" id="Income-certificate" name="Income-certificate">
+      <br>
+      <label for="Bank-passbook">Upload Bank Passbook</label>
+      <input type="file" id="Bank-passbook" name="Bank-passbook">
+      <br>
+      <label for="Secondary">Upload 10th Marksheet</label>
+      <input type="file" id="Secondary" name="Secondary">
+      <br>
+      <label for="Higher-Secondary">Upload 12th Marksheet</label>
+      <input type="file" id="Higher-Secondary" name="Higher-Secondary">
+      <br>
+      <label for="Graduation">Upload Graduation Marksheet</label>
+      <input type="file" id="Graduation" name="Graduation">
+      <br>
+      <label for="Post-Graduation">Upload Post-Graduation Marksheet</label>
+      <input type="file" id="Post-Graduation" name="Post-Graduation">
+      <br>
+      <label for="Aadhar-card">Upload Aadhar Card</label>
+      <input type="file" id="Aadhar-card" name="Aadhar-card">
+      <br>
+      <label for="pan-card">Upload Pan Card</label>
+      <input type="file" id="pan-card" name="pan-card">
+      <br>
+      <label for="Cate-certificate">Upload Caste Certificate</label>
+      <input type="file" id="Cate-certificate" name="Cate-certificate">
+      <br>                      
+      <label for="Domicile-certificate">Upload Domicile Certificate</label>
+      <input type="file" id="Domicile-certificate" name="Domicile-certificate">
+      <br>
+      <label for="Ration-card">Upload Ration Card</label>
+      <input type="file" id="Ration-card" name="Ration-card">
+      <br>
+      <label for="Photo">Upload Photo</label>
+      <input type="file" id="Photo" name="Photo">
+      <br>                     
+      <label for="Sign">Upload Sign</label>
+      <input type="file" id="Sign" name="Sign">
+      <br>
+      <label for="Acknowledgement">Upload Acknowledgement</label>
+      <input type="file" id="Acknowledgement" name="Acknowledgement">
+    </div>
+  
+  </div>
+</div>
+</form>
+
+<div class="button-container">
+    <a routerLink='' class="text-primary" style="text-decoration: none;">Log Out </a>
+
+  
+  <button class="btn btn-outline-success me-md-2" type="button" (click)="saveApplication()" >Submit</button>  
+
+</div>
